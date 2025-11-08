@@ -1,0 +1,102 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonderlust</title>
+    <meta name="description" content="Media pairing to the 2025 YDA film Sonderlust.
+You are beautifully human.">
+    <meta name="keywords" content="90s, retro, vintage, web design, nostalgia, sonderlust">
+    <meta property="og:title" content="Sonderlust">
+    <meta property="og:description" content="Media pairing to the 2025 YDA film Sonderlust.
+You are beautifully human.">
+    <meta name="twitter:title" content="Sonderlust">
+    <meta name="twitter:description" content="Media pairing to the 2025 YDA film Sonderlust.
+You are beautifully human.">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&amp;family=Special+Elite&amp;display=swap" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+        @layer theme {
+        :root {
+            --primary-color: #D2691E;
+            --secondary-color: #CD853F;
+            --accent-color: #F4A460;
+            --background-color: #FFF8DC;
+            --text-color: #3E2723;
+            --border-color: #8B4513;
+        }
+    }
+
+    @layer base {
+        body {
+            background-image: url('https://app.trickle.so/storage/public/images/usr_170d739758000001/7cddd2e7-4679-4070-88a7-a2873880e463.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            font-family: 'Courier Prime', monospace;
+            color: var(--text-color);
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Special Elite', cursive;
+        }
+    }
+
+    @layer components {
+        .retro-button {
+            background: linear-gradient(180deg, #F4A460 0%, #CD853F 100%);
+            border: 3px outset #D2691E;
+            box-shadow: 3px 3px 0px rgba(0,0,0,0.3), inset 1px 1px 0px rgba(255,255,255,0.5);
+            font-family: 'Special Elite', cursive;
+            transition: all 0.1s;
+        }
+        
+        .retro-button:active {
+            border-style: inset;
+            box-shadow: inset 2px 2px 3px rgba(0,0,0,0.3);
+            transform: translateY(1px);
+        }
+        
+        .retro-panel {
+            background: linear-gradient(135deg, #FAEBD7 0%, #FFE4B5 100%);
+            border: 4px ridge #8B4513;
+            box-shadow: 5px 5px 0px rgba(0,0,0,0.2);
+        }
+        
+        .retro-input {
+            border: 3px inset #8B4513;
+            background: #FFFAF0;
+            box-shadow: inset 2px 2px 3px rgba(0,0,0,0.1);
+        }
+    }
+
+    @layer utilities {
+        .text-shadow-retro {
+            text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+        }
+    }
+    </style>
+    <link rel="icon" href="https://app.trickle.so/storage/app/IMG_3167.jpeg">
+    <meta property="og:image" content="https://app.trickle.so/storage/app/IMG_3167.jpeg">
+    <meta name="twitter:image" content="https://app.trickle.so/storage/app/IMG_3167.jpeg">
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Navigation.js"></script>
+    <script type="text/babel" src="components/GuestbookEntry.js"></script>
+    <script type="text/babel" src="components/Counter.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="app.js"></script>
+
+</body>
+
+</html>
